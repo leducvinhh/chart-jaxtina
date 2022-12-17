@@ -1,0 +1,25 @@
+.chart {
+  position: relative;
+  z-index: 1;
+  display: none;
+}
+
+.chart.active {
+  display: block;
+}
+
+.chart-inner {
+  padding: 20px;
+  z-index: 1;
+}
+
+.canvas-chart {
+  background-color: rgba(0, 0, 0, .7);
+  border-radius: 20px;
+  margin: 0 auto;
+}
+
+.chart-pt .canvas-chart {
+  width: 800px !important;
+  height: 600px !important;
+}

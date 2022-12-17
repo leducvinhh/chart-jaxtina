@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles/common.css" />
+  <link rel="stylesheet" href="./styles/chart.css" />
+  <link rel="stylesheet" href="./styles/style.css" />
+</head>
+
+<body>
+  <div id="particles"></div>
+
+  <div class="container">
+    <header id="header">
+      <div class="inner">
+        <ul class="menu-list">
+          <li class="menu-item active">PT</li>
+          <li class="menu-item">Học Viên</li>
+          <li class="menu-item">Lớp Học</li>
+          <li class="menu-item">Giảng Viên</li>
+          <li class="menu-item">Giờ Học</li>
+        </ul>
+      </div>
+    </header>
+    <main id="main">
+      <div class="inner">
+        <!-- tab-pt begin -->
+        <div class="tab-container tab-pt active">
+          <div class="form-container active form-pt">
+            <h2 class="title">Tong PT</h2>
+            <div class="form-double">
+              <div class="form-field">
+                <input name="team1_1" autocomplete="off" type="text" class="form-input" placeholder=" " />
+                <label for="name" class="form-label">Team1 (Period 1)</label>
+              </div>
+              <div class="form-field">
+                <input name="team1_2" autocomplete="off" type="text" class="form-input" placeholder=" " />
+                <label for="name" class="form-label">Team1 (Period 2)</label>
+              </div>
+            </div>
+            <div class="form-double">
+              <div class="form-field">
+                <input name="team2_1" autocomplete="off" type="text" class="form-input" placeholder=" " />
+                <label for="name" class="form-label">Team2 (Period 1)</label>
+              </div>
+              <div class="form-field">
+                <input name="team2_2" autocomplete="off" type="text" class="form-input" placeholder=" " />
+                <label for="name" class="form-label">Team2 (Period 2)</label>
+              </div>
+            </div>
+            <div class="form-double">
+              <div class="form-field">
+                <input name="team3_1" autocomplete="off" type="text" class="form-input" placeholder=" " />
+                <label for="name" class="form-label">Team3 (Period 1)</label>
+              </div>
+              <div class="form-field">
+                <input name="team3_2" autocomplete="off" type="text" class="form-input" placeholder=" " />
+                <label for="name" class="form-label">Team3 (Period 2)</label>
+              </div>
+            </div>
+            <div class="form-double">
+              <div class="form-field">
+                <input name="team4_1" autocomplete="off" type="text" class="form-input" placeholder=" " />
+                <label for="name" class="form-label">Team4 (Period 1)</label>
+              </div>
+              <div class="form-field">
+                <input name="team4_2" autocomplete="off" type="text" class="form-input" placeholder=" " />
+                <label for="name" class="form-label">Team4 (Period 2)</label>
+              </div>
+            </div>
+            <div class="btn-submit js-chart-pt">Create Chart</div>
+          </div>
+          <div class="chart chart-pt">
+            <div class="chart-inner">
+              <canvas class="canvas-chart " id="chart-tab-pt" width="800" height="600"></canvas>
+            </div>
+          </div>
+        </div>
+        <!-- tab-pt end -->
+
+        <!-- tab-student begin -->
+        <div class="tab-container tab-student">
+          <div class="form-container active form-student">
+            <h2 class="title">Tong so hoc vien</h2>
+            <div class="form-field">
+              <input name="4-skill" autocomplete="off" type="text" class="form-input" placeholder=" " />
+              <label for="name" class="form-label">4 Skill</label>
+            </div>
+            <div class="form-field">
+              <input name="IFLTS" autocomplete="off" type="text" class="form-input" placeholder=" " />
+              <label for="name" class="form-label">IFLTS</label>
+            </div>
+            <div class="form-field">
+              <input name="TOEIC" autocomplete="off" type="text" class="form-input" placeholder=" " />
+              <label for="name" class="form-label">TOEIC</label>
+            </div>
+            <div class="form-field">
+              <input name="OTHER" autocomplete="off" type="text" class="form-input" placeholder=" " />
+              <label for="name" class="form-label">OTHER</label>
+            </div>
+            <div class="btn-submit js-chart-student">Create Chart</div>
+          </div>
+          <div class="chart chart-student">
+            <div class="chart-inner">
+              <canvas class="canvas-chart" id="chart-tab-student" width="800" height="600"></canvas>
+            </div>
+          </div>
+        </div>
+        <!-- tab-student end -->
+
+        <!-- tab-class begin -->
+        <div class="tab-container tab-class">
+          <div class="form-container active form-class">
+            <h2 class="title">Tong so lop</h2>
+
+            <div class="form-field">
+              <input autocomplete="off" name="FO" type="text" class="form-input" placeholder=" " />
+              <label for="name" class="form-label">Input FO</label>
+            </div>
+            <div class="form-field">
+              <input autocomplete="off" name="PRES" type="text" class="form-input" placeholder=" " />
+              <label for="name" class="form-label">Input PRES</label>
+            </div>
+            <div class="form-field">
+              <input autocomplete="off" name="S" type="text" class="form-input" placeholder=" " />
+              <label for="name" class="form-label">Input S</label>
+            </div>
+            <div class="form-field">
+              <input autocomplete="off" name="TC" type="text" class="form-input" placeholder=" " />
+              <label for="name" class="form-label">Input TC</label>
+            </div>
+            <div class="form-field">
+              <input autocomplete="off" name="MTC" type="text" class="form-input" placeholder=" " />
+              <label for="name" class="form-label">Input MTC</label>
+            </div>
+            <div class="form-field">
+              <input autocomplete="off" name="TOEIC" type="text" class="form-input" placeholder=" " />
+              <label for="name" class="form-label">Input TOEIC</label>
+            </div>
+            <div class="btn-submit js-chart-class">Create Chart</div>
+          </div>
+          <div class="chart chart-class">
+            <div class="chart-inner">
+              <canvas class="canvas-chart" id="chart-tab-class" width="800" height="600"></canvas>
+            </div>
+          </div>
+        </div>
+        <!-- tab-class end -->
+
+        <!-- tab-teacher begin -->
+        <div class="tab-container tab-teacher">
+          <div class="form-container active form-teacher">
+            <h2 class="title">Ca day trong tuan</h2>
+            <div class="form-field">
+              <input name="cancel" autocomplete="off" type="text" class="form-input" placeholder=" " />
+              <label for="name" class="form-label">Cancel</label>
+            </div>
+            <div class="form-field">
+              <input name="gv-pt" autocomplete="off" type="text" class="form-input" placeholder=" " />
+              <label for="name" class="form-label">GV PT</label>
+            </div>
+            <div class="form-field">
+              <input name="gv-ft" autocomplete="off" type="text" class="form-input" placeholder=" " />
+              <label for="name" class="form-label">GV FT</label>
+            </div>
+            <div class="btn-submit js-chart-teacher">Create Chart</div>
+          </div>
+          <div class="chart chart-teacher">
+            <div class="chart-inner">
+              <canvas class="canvas-chart" id="chart-tab-teacher" width="800" height="600"></canvas>
+            </div>
+          </div>
+        </div>
+        <!-- tab-teacher end -->
+
+        <!-- tab-timer begin -->
+        <div class="tab-container tab-timer">
+          <div class="form-container active form-timer">
+            <h2 class="title">Giao vien fulltime</h2>
+            <div class="form-field">
+              <input name="Ca dạy" autocomplete="off" type="text" class="form-input" placeholder=" " />
+              <label for="name" class="form-label">Ca dạy</label>
+            </div>
+            <div class="form-field">
+              <input name="Bổ trợ" autocomplete="off" type="text" class="form-input" placeholder=" " />
+              <label for="name" class="form-label">Bổ trợ</label>
+            </div>
+            <div class="form-field">
+              <input name="PT" autocomplete="off" type="text" class="form-input" placeholder=" " />
+              <label for="name" class="form-label">PT</label>
+            </div>
+            <div class="form-field">
+              <input name="R&D" autocomplete="off" type="text" class="form-input" placeholder=" " />
+              <label for="name" class="form-label">R&D</label>
+            </div>
+            <div class="btn-submit js-chart-timer">Create Chart</div>
+          </div>
+          <div class="chart chart-timer">
+            <div class="chart-inner">
+              <canvas class="canvas-chart" id="chart-tab-timer" width="800" height="600"></canvas>
+            </div>
+          </div>
+        </div>
+        <!-- tab-timer end -->
+      </div>
+    </main>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/emn178/chartjs-plugin-labels/src/chartjs-plugin-labels.js"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-doughnutlabel/2.0.3/chartjs-plugin-doughnutlabel.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@1.37.4/tsparticles.min.js"></script>
+  <script src="/js/index.js" type="module"></script>
+</body>
+
+</html>
